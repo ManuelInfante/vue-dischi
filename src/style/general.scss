@@ -1,0 +1,44 @@
+// Import Bootstrap:
+
+// può avvenire nel scss che nel main.js sempre con l'import (anche se nella lezione abbiamo visto che richiede un componente aggiuntvo da installare da npm che è il popper.js)
+
+// Possiamo importarlo così:  (dato che il file principale si chiama così) 
+
+// @import "bootstrap";
+
+// Oppure così:
+
+@import "~bootstrap/scss/bootstrap";  // (la tilde: ~ (option/alt + 5) web-pack cerca di risolvere la richiesta import come modulo e quindi cercherà nella cartella node_modules)
+
+/*
+Webpack a riguardo scrive:
+
+L'utilizzo di ~ è deprecato e può essere rimosso dal codice ( lo consigliamo ), ma lo supportiamo ancora per ragioni storiche.
+Perché puoi rimuoverlo?
+Il caricatore proverà prima a risolvere @import come percorso relativo.
+Se non può essere risolto, il caricatore proverà a risolve @import all'interno di node_modules.
+*/
+
+// Import variabili
+@import "./vars";
+
+//import font weight Montserrat
+
+//@import "~@fontsource/montserrat/index.css";
+//@import "~@fontsource/montserrat/700.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $main-font;
+}
+
+button{
+    font-weight: 700;
+}
+
