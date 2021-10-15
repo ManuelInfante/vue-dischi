@@ -1,28 +1,21 @@
 <template>
   <div id="app">
     <Header />
-
-    <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-dark">Dark</button>
-
-  <button type="button" class="btn btn-link">Link</button>
-
+    <main>
+      <Albums />
+    </main>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Albums from './components/Albums.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Albums,
   }
 }
 </script>

@@ -24,8 +24,8 @@ Se non può essere risolto, il caricatore proverà a risolve @import all'interno
 
 //import font weight Montserrat
 
-//@import "~@fontsource/montserrat/index.css";
-//@import "~@fontsource/montserrat/700.css";
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/700.css";
 
 
 *{
@@ -36,6 +36,7 @@ Se non può essere risolto, il caricatore proverà a risolve @import all'interno
 
 body{
     font-family: $main-font;
+    background-color: $darkblue;
 }
 
 button{
